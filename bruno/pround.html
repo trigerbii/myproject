@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zoom In and Out Text</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    #zoomContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      transition: background-color 1s;
+
+    }
+    
+    #zoomText {
+      font-size: 100px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: white;
+      transition: font-size 1s, color 1s;
+
+    }
+  </style>
+  <script>
+    function zoomInAndOut() {
+      var zoomContainer = document.getElementById('zoomContainer');
+      var zoomText = document.getElementById('zoomText');
+      
+      zoomContainer.style.backgroundColor = 'black';
+      zoomText.style.fontSize = '200px';
+      zoomText.style.color = 'white';
+      
+      setTimeout(function() {
+        zoomContainer.style.backgroundColor = 'white';
+        zoomText.style.fontSize = '100px';
+        zoomText.style.color = 'black';
+      }, 2000);
+      
+      setTimeout(function() {
+        window.location.href = 'triger bii fb.html'; // Replace 'navigation.html' with your navigation page URL
+      }, 5000);
+    }
+  </script>
+</head>
+<body onload="zoomInAndOut()">
+  <div id="zoomContainer">
+    <h1 id="zoomText" style="font-family: Gabriola;">TRIGER </h1>
+  </div>
+</body>
+</html>

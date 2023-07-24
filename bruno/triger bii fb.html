@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<!DOCTYPE html>
+<html>
+<head>
+  <title>Attractive Website</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+  	/* General Styles */
+        #login-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 9999;
+}
+
+#login-popup h2 {
+  text-align: center;
+  font-family: Regular;
+}
+
+#login-popup label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#login-popup input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#login-popup button[type="submit"] {
+  width: 100%;
+  padding: 8px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#login-popup button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#login-popup .toggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#login-popup .toggle button {
+  padding: 5px 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#login-popup .toggle button.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#login-popup.show {
+  display: block;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(kaka.jpg);
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  color: whitesmoke;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+
+}
+
+/* Banner Styles */
+#banner {
+  background-image: url('banner.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 150px 0;
+  color: #fff;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+/* Other Sections */
+section {
+  padding: 50px;
+}
+
+section#about {
+  background-color: #f2f2f2;
+}
+
+/* Contact Form */
+form input,
+form textarea,
+form button {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+ 
+  </style>
+</head>
+<body >
+  <header>
+    <h1>Welcome to the Attractive Website</h1>
+    <nav>
+       <button id="login-btn">Login/Signup</button>
+
+  <div id="login-popup">
+    <div class="toggle">
+      <button id="login-toggle" class="active">Login</button>
+      <button id="signup-toggle">Signup</button>
+    </div>
+    <form id="login-form">
+      <h2>Login</h2>
+      <label for="username">Email:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit">Login</button>
+    </form>
+    <form id="signup-form" style="display: none;">
+      <h2>Signup</h2>
+      <label for="username">fname:</label>
+       <input type="text" id="signup-username" name="signup-username" required>
+       <label for="username">lname:</label>
+      <input type="text" id="signup-username" name="signup-username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="signup-password" name="signup-password" required>
+      <button type="submit">Signup</button>
+    </form>
+  </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="banner">
+    <h2>Discover Something Amazing</h2>
+    <p>Explore our services and take your online presence to the next level.</p>
+    <a href="#services" class="cta-button">Learn More</a>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </section>
+
+  <section id="services">
+    <h2>MARKETING</h2>
+    <ul>
+      <li>Samething you wont</li>
+      <li>Marketing</li>
+      <li>Mobile App Development</li>
+      <li>food</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Attractive Website. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+  	// Add smooth scrolling when clicking on navigation links
+document.querySelectorAll('nav a').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+  </script>
+   <script type="text/javascript">
+   document.getElementById("login-btn").addEventListener("click", function() {
+  document.getElementById("login-popup").classList.add("show");
+});
+
+document.getElementById("login-toggle").addEventListener("click", function() {
+  document.getElementById("login-toggle").classList.add("active");
+  document.getElementById("signup-toggle").classList.remove("active");
+  document.getElementById("login-form").style.display = "block";
+  document.getElementById("signup-form").style.display = "none";
+});
+
+document.getElementById("signup-toggle").addEventListener("click", function() {
+  document.getElementById("signup-toggle").classList.add("active");
+  document.getElementById("login-toggle").classList.remove("active");
+  document.getElementById("signup-form").style.display = "block";
+  document.getElementById("login-form").style.display = "none";
+});
+
+document.getElementById("login-popup").addEventListener("click", function(e) {
+  if (e.target.id === "login-popup") {
+    document.getElementById("login-popup").classList.remove("show");
+  }
+});
+
+  </script>
+</body>
+</html>
+
+
+</body>
+</html>
